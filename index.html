@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UK Economic Tracker</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background-color: #101827;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding: 35px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #d4af37;
+            font-size: 32px;
+        }
+
+        header p {
+            color: #aab4c5;
+        }
+
+        .dashboard {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            width: 260px;
+        }
+
+        .card h2 {
+            color: #aab4c5;
+            font-size: 17px;
+        }
+
+        .value {
+            font-size: 42px;
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .date {
+            color: #aab4c5;
+            font-size: 13px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #aab4c5;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>UK Economic Tracker</h1>
+
+        <p>Tracking the UK's economic performance</p>
+
+    </header>
+
+    <main>
+
+        <div class="dashboard">
+
+            <section class="card">
+
+                <h2>Annual CPI Inflation</h2>
+
+                <div class="value" id="inflation">
+                    --%
+                </div>
+
+                <p class="date" id="inflation-date">
+                    Awaiting data...
+                </p>
+
+            </section>
+
+            <section class="card">
+
+                <h2>Bank of England Rate</h2>
+
+                <div class="value" id="interest">
+                    --%
+                </div>
+
+                <p class="date" id="interest-date">
+                    Awaiting data...
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>UK Economic Tracker | Economic data dashboard</p>
+
+    </footer>
+
+</body>
+
+</html>
